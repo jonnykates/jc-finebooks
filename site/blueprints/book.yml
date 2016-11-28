@@ -1,0 +1,37 @@
+title: Book
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+    required: true
+
+  author:
+    label: Author
+    type: text
+    required: true
+
+  coverImage:
+    label: Cover Image
+    type: image
+
+  publisher:
+    label: Publisher
+    type: text
+
+  year:
+    label: Year of publication
+    type: text
+    width: 1/4
+
+  text:
+    label: Description
+    type:  textarea
+    required: true
+
+  price:
+    label: Price
+    type: text
+    width: 1/4

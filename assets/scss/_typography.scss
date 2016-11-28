@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Bembo';
+  src: url('../fonts/BemboStd.woff2') format('woff2'),
+       url('../fonts/BemboStd.woff') format('woff'),
+       url('../fonts/BemboStd.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bembo-Semibold-Italic';
+  src: url('../fonts/BemboStd-SemiboldItalic.woff2') format('woff2'),
+       url('../fonts/BemboStd-SemiboldItalic.woff') format('woff'),
+       url('../fonts/BemboStd-SemiboldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bembo-Bold';
+  src: url('../fonts/BemboStd-Bold.woff2') format('woff2'),
+       url('../fonts/BemboStd-Bold.woff') format('woff'),
+       url('../fonts/BemboStd-Bold.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+h1, h2, h3, h4, h5, h6, p, span {
+  color: $text-color;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-family: 'Bembo-Semibold-Italic', serif;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: 'Bembo', serif;
+  font-weight: normal;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+}
+
+.bordered-header {
+  width: 100%;
+  max-width: $col-width * 3 + 60px;
+  margin: 40px auto 20px;
+  text-align: center;
+  padding: 12px 0;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  font-size: 1.3em;
+  font-family: 'Bembo-Semibold-Italic', serif;
+}
+
+.button {
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 0;
+  font-size: 1em;
+  padding: 10px;
+  background: $secondary-color;
+  font-family: 'Bembo-Bold', serif;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &:hover {
+    background: $secondary-color-text;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.back-link {
+  font-size: .85rem;
+  text-transform: uppercase;
+  display: block;
+  color: $faded-text;
+  font-family: 'Bembo-Bold', serif;
+  font-weight: bold;
+  margin-left: 15px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 5px;
+    border-top: 5px solid transparent;
+    border-right: 10px solid $faded-text;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+a.home-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
