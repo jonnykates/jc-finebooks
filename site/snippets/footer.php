@@ -1,6 +1,6 @@
     <div class="newsletter col--main">
       <h3 class="bordered-header">Newsletter</h3>
-      <form>
+      <form class="form__newsletter">
         <input type="email" class="newsletter__email" placeholder="Email address" />
         <input type="submit" class="newsletter__submit button" value="Subscribe">
       </form>

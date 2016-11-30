@@ -9,24 +9,18 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('compile', function() {
 	console.log('compiling...');
-	return gulp.src('./scss/main.scss')
+	return gulp.src('./assets/scss/main.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 		.pipe(autoprefixer("last 5 versions"))
 		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./css/'))
+		.pipe(gulp.dest('./assets/css/'))
 		.pipe(browserSync.reload({
 			stream: true
 		}));
 });
 
-gulp.task('serve', ['compile'], function() {
-	browserSync.init({
-		server: {
-			baseDir: './'
-		}
-	});
-	gulp.watch('./scss/*.scss', ['compile']);
-	gulp.watch('./css/main.css').on('change', browserSync.reload);
-	gulp.watch('./*.html').on('change', browserSync.reload);
+gulp.task('watch', ['compile'], function() {
+	gulp.watch('./assets/scss/*.scss', ['compile']);
+	gulp.watch('./assets/css/main.css').on('change', browserSync.reload);
 });

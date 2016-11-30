@@ -15,7 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', 'K2-PRO-c0f6fdc51890290bd9a99b5f3af58b90');
 
 /*
 
@@ -29,3 +29,10 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 c::set('debug',true);
+
+c::set('uniform.language', 'en');
+
+c::set('email.service', 'mail');
+c::set('email.from', 'Jonny Kates <jonnykates@gmail.com>');
+c::set('email.replyTo', 'Jonny Kates <jonnykates@gmail.com>');
+c::set('email.subject', 'Jonathan Clark Fine Books');

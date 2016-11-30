@@ -52,6 +52,18 @@ a {
 
 p {
   font-family: 'EB Garamond', serif;
+  font-size: 1.1em;
+}
+
+div:not(.footer) {
+ > p:first-of-type:first-letter {
+    color: $secondary-color;
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    margin-right: 3px;
+    margin-top: -8px;
+  }
 }
 
 .bordered-header {
@@ -66,7 +78,7 @@ p {
   font-family: 'Bembo-Semibold-Italic', serif;
 }
 
-.button {
+.button, button {
   box-sizing: border-box;
   border-radius: 2px;
   border: 0;

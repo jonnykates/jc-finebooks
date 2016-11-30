@@ -1,14 +1,45 @@
+label {
+  display: block;
+  font-family: 'Bembo-Bold', serif;
+  font-size: 1em;
+  color: $white;
+  margin-bottom: 3px;
+}
+
 input[type=text],
-input[type=email] {
+input[type=email],
+textarea {
   border: 1px solid #7a909b;
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 10px;
-  width: 60%;
-  margin-right: 2%;
   box-sizing: border-box;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
 }
 
 input[type=submit] {
   width: 38%;
   margin-left: -5px;
+}
+
+.uniform__potty {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.form__contact {
+  button {
+    margin: 15px auto 0px;
+  }
+}
+
+.form__newsletter {
+  input[type=email] {
+    width: 60%;
+    margin-right: 2%;
+    display: inline-block;
+    margin-bottom: 0;
+  }
 }

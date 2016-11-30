@@ -2,4 +2,4 @@ Title: Books
 
 ----
 
-Text: This is the books screen
+Text: 

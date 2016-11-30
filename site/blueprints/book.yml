@@ -24,7 +24,6 @@ fields:
   year:
     label: Year of publication
     type: text
-    width: 1/4
 
   text:
     label: Description
@@ -32,6 +31,9 @@ fields:
     required: true
 
   price:
-    label: Price
+    label: Price (£)
     type: text
-    width: 1/4
+
+  booksellerId:
+    label: Bookseller ID
+    type: text

@@ -12,6 +12,7 @@
 
 .product__image {
   width: 40%;
+  text-align: center;
 
   .image-frame {
     padding: 15px;
@@ -27,11 +28,31 @@
   }
 }
 
+.product__image--placeholder {
+  display: block;
+  width: 100%;
+  height: 350px;
+  background-color: darken($primary-color, 10%);
+  position: relative;
+  border-radius: 2px;
+
+  span {
+    color: $faded-text;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Bembo-Bold', serif;
+    text-transform: uppercase;
+  }
+}
+
 .product__content {
   width: 60%;
 
   p:first-of-type {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 
@@ -60,10 +81,21 @@
 }
 
 .product__price {
-  margin: 0 15px 0 0;
+  margin: 0 1rem 0 0;
   display: inline-block;
-  font-size: 2.2em;
-  font-family: 'EB Garamond', serif;
+  font-size: 3em;
   color: $secondary-color;
   line-height: 1;
+  vertical-align: middle;
+  font-family: "Bembo-Bold", serif;
+
+  sup {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    color: inherit;
+  }
+}
+
+.button__enquire {
+  vertical-align: middle;
 }

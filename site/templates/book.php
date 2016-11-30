@@ -1,10 +1,21 @@
 <?php snippet('header') ?>
 
+<?php
+  $bookPrice = $page->price()->html();
+?>
+
   <div class="product-page">
-    <a class="back-link" href="/jc-books/books">Back</a>
+    <a class="back-link" href="/books">Back</a>
     <div class="product__image">
       <div class="image-frame">
-        <img src="<?= $page->images()->find($page->coverImage())->url() ?>" />
+        <?php
+          if($page->coverImage()->isNotEmpty()) {
+            $coverImageUrl = $page->images()->find($page->coverImage())->url();
+            echo "<img src='$coverImageUrl' />";
+          } else {
+            echo "<div class='product__image--placeholder'><span>No image</span></div>";
+          }
+        ?>
       </div>
     </div>
     <div class="product__content">
@@ -13,12 +24,12 @@
           <h2 class="product__author"><?= $page->author()->html() ?></h3>
       </div>
       <div class="product__pricing">
-          <h3 class="product__price"><?= $page->price()->html() ?></h3>
-          <a class="button" href="/jc-books/contact">Enquire</a>
+          <h3 class="product__price"><?php e($page->price()->isNotEmpty(), "<sup>£</sup>$bookPrice" ); ?></h3>
+          <a class="button button__enquire" href="/contact/?enquiry=<?= $page->title()->html() ?>">Enquire</a>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-      <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
-      <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+      <div>
+        <?= $page->text()->kirbytext() ?>
+      </div>
     </div>
   </div>
 

@@ -1,7 +1,7 @@
 {
-  "name": "jc-fine-books",
+  "name": "jc-finebooks",
   "version": "1.0.0",
-  "description": "Jonathan Clarke Fine Books",
+  "description": "Jonathan Clark Fine Books",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

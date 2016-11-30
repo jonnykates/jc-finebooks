@@ -1,0 +1,15 @@
+title: Books
+
+fields:
+  title:
+    label: Title
+    type: text
+    require: true
+
+  info:
+    label: About the Books section
+    type: info
+    text: >
+      This is the 'Books' page. Each of the child books that you can see in the 'Pages' section on the left are displayed to the user for them to browse.
+      <br /><br />
+      To navigate to a book in the collection, simply click the name of the book in the left hand menu and you'll be taken to that specific book; where you can update the book's information as well as the default order that it appears in the main books screen.
