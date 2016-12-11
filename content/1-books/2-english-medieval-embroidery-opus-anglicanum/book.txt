@@ -2,7 +2,7 @@ Title: English medieval Embroidery. Opus Anglicanum
 
 ----
 
-Author: Clare Browne, Glyn Davies, M. A. Michael
+Author: BROWNE, Clare, Glyn DAVIES and M.A. Michael
 
 ----
 
@@ -27,3 +27,11 @@ Price: 40
 ----
 
 Booksellerid: 1001
+
+----
+
+Shorttitle: English medieval Embroidery. Opus Anglicanum
+
+----
+
+Keywords: Exhibition Catalogue Textiles

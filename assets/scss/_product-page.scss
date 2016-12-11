@@ -15,16 +15,17 @@
   text-align: center;
 
   .image-frame {
-    padding: 15px;
+    // padding: 15px;
     background-color: $white;
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    font-size: 0;
   }
 
   img {
     width: 100%;
-    border-radius: 2px;
+    // border-radius: 2px;
   }
 }
 
@@ -34,7 +35,7 @@
   height: 350px;
   background-color: darken($primary-color, 10%);
   position: relative;
-  border-radius: 2px;
+  // border-radius: 2px;
 
   span {
     color: $faded-text;
@@ -45,6 +46,7 @@
     transform: translateY(-50%);
     font-family: 'Bembo-Bold', serif;
     text-transform: uppercase;
+    font-size: 1rem;
   }
 }
 
@@ -61,16 +63,21 @@
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 
-  .product__title {
+  .product__author {
     font-family: 'Bembo-Bold', serif;
     font-size: 2.2em;
     margin: 0 0 10px;
   }
 
-  .product__author {
+  .product__title {
     font-family: 'Bembo-Semibold-Italic', serif;
     color: $faded-text;
     margin: 0;
+  }
+
+  .product__publisher {
+    text-transform: uppercase;
+    font-size: 1.2rem;
   }
 }
 
@@ -89,13 +96,28 @@
   vertical-align: middle;
   font-family: "Bembo-Bold", serif;
 
-  sup {
-    font-size: 1.5rem;
+  sup, span {
+    // font-size: 1.5rem;
+    font-size: 2rem;
     vertical-align: middle;
     color: inherit;
+    font-family: 'Arial', sans-serif;
   }
 }
 
 .button__enquire {
   vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  .product__image, .product__content {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .product__image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }

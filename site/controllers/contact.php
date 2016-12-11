@@ -9,7 +9,7 @@ return function($site, $pages, $page) {
         'actions' => [
             [
                 '_action' => 'email',
-                'to'      => 'jonnykates@gmail.com',
+                'to'      => 'jonathanblue57@gmail.com',
                 'sender'  => 'noreply@jonathanclarkfinebooks.co.uk',
                 'subject' => 'New message from the contact form',
                 'snippet' => 'uniform-email-default'

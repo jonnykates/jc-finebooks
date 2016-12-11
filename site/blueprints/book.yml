@@ -4,12 +4,17 @@ pages: false
 
 fields:
   title:
-    label: Title
+    label: Full title
     type:  text
     required: true
 
+  shortTitle:
+    label: Short title
+    type: text
+    required: true
+
   author:
-    label: Author
+    label: Author(s)
     type: text
     required: true
 
@@ -37,3 +42,7 @@ fields:
   booksellerId:
     label: Bookseller ID
     type: text
+
+  keywords:
+    label: Keywords
+    type: tags

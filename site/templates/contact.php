@@ -5,10 +5,19 @@
 
 <?php
   $enquiryRelatesTo = "";
-  if(get('enquiry')) {
-    $enquiryRelatesTo = get('enquiry');
+  $enquiryAuthor = "";
+  if(get('title')) {
+    $enquiryRelatesTo = get('title');
+    $enquiryAuthor = get('author');
   }
 ?>
+
+<?php if(get('title')){ ?>
+  <div class="enquiry-summary">
+    <span>Enquiring about</span>
+    <h3><strong><?= $enquiryAuthor ?></strong>, <?= $enquiryRelatesTo ?></h3>
+  </div>
+<?php } ?>
 
 <form action="<?php echo $page->url()?>#form" method="post" class="form__contact">
 
@@ -18,8 +27,8 @@
     <label for="email" class="required">E-Mail</label>
     <input<?php e($form->hasError('_from'), ' class="erroneous"')?> type="email" name="_from" id="email" value="<?php $form->echoValue('_from') ?>" required/>
 
-    <label for="related-book">Related book</label>
-    <input type="text" name="related-book" id="related-book" value="<?= $enquiryRelatesTo ?>" />
+    <label for="enquiring-about">Enquiring about</label>
+    <input type="text" name="enquiring-about" id="enquiring-about" value="<?= $enquiryRelatesTo ?>" />
 
     <label for="message">Message</label>
     <textarea name="message" id="message"><?php $form->echoValue('message') ?></textarea>

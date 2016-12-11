@@ -1,8 +1,8 @@
-Title: The Regent's Park Colosseum
+Title: The Regent's Park Colosseum Or, "without hyperbole, the wonder of the world" Being An Account Of A Forgotten Pleasure Dome And Its Creators. ... Embellished With Six Hand-Coloured Plates and Numerous Graphic Illustrations.
 
 ----
 
-Author: Ralph Hyde
+Author: [REGENT'S PARK] HYDE, Ralph.
 
 ----
 
@@ -33,3 +33,11 @@ Price: 395
 ----
 
 Booksellerid: 1003
+
+----
+
+Shorttitle: The Regent's Park Colosseum
+
+----
+
+Keywords: Regent's Park London Panorama

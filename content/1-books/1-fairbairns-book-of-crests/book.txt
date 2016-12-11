@@ -1,8 +1,8 @@
-Title: Fairbairn's Book Of Crests Of The Families Of Great Britain And Ireland
+Title: Fairbairn's Book Of Crests Of The Families Of Great Britain And Ireland.
 
 ----
 
-Author: James Fairbairn
+Author: FAIRBAIRN, James.
 
 ----
 
@@ -27,3 +27,11 @@ Price: 495
 ----
 
 Booksellerid: 1000
+
+----
+
+Shorttitle: Book Of Crests Of The Families Of Great Britain And Ireland
+
+----
+
+Keywords: Genealogy Peerage

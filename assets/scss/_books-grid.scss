@@ -7,6 +7,7 @@
 .books-grid__book {
   width: 20%;
   padding: 15px;
+  // min-width: 148px;
   text-align: center;
   box-sizing: border-box;
 
@@ -24,7 +25,7 @@
 .book__image {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  // padding: 10px;
   background-color: $white;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
@@ -32,13 +33,13 @@
   margin-bottom: 10px;
 
   img {
-    border-radius: 2px;
+    // border-radius: 2px;
   }
 
   .book__cover {
     display: block;
     width: 100%;
-    height: 150px;
+    height: 170px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -47,7 +48,7 @@
       background-color: darken($primary-color, 10%);
       font-size: .75em;
       position: relative;
-      border-radius: 2px;
+      // border-radius: 2px;
       span {
         color: $faded-text;
         position: absolute;
@@ -66,14 +67,41 @@
   margin: 0;
   padding: 0;
   font-size: 1em;
-  font-family: 'Bembo-Bold', serif;
-  margin-bottom: 5px;
+  font-family:: 'Bembo-Semibold-Italic', serif;
+  color: $faded-text;
 }
 
 .book__author {
   margin: 0;
   padding: 0;
   font-size: 1em;
-  font-family:: 'Bembo-Semibold-Italic', serif;
-  color: $faded-text;
+  font-family: 'Bembo-Bold', serif;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 780px) {
+  .books-grid__book {
+    width: 25%; // four columns
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .books-grid__book {
+    width: 33.3333%; // three columns
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .books-grid__book {
+    width: 100%; // one column
+  }
+
+  .book__image {
+    max-width: 150px;
+    margin: 0 auto 10px;
+  }
+
+  .book__image .book__cover {
+    height: 200px; // no need to simulate table cell now single col
+  }
 }

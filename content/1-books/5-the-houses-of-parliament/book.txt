@@ -1,8 +1,8 @@
-Title: The Houses of Parliament
+Title: The Houses of Parliament. Three Dimensional Volumetric Micro Models Architectural Series. Set Arc XIX.
 
 ----
 
-Author: Micro Models Ltd.
+Author: MICRO MODELS LTD.
 
 ----
 
@@ -31,3 +31,11 @@ Price: 45
 ----
 
 Booksellerid: 1004
+
+----
+
+Shorttitle: The Houses of Parliament
+
+----
+
+Keywords: Architectural game,Architectural model

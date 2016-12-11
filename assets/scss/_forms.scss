@@ -43,3 +43,46 @@ input[type=submit] {
     margin-bottom: 0;
   }
 }
+
+form {
+  .message {
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+  }
+}
+
+.enquiry-summary {
+  display: block;
+  padding: 15px;
+  background-color: lighten($primary-color, 10%);
+  border-radius: 2px;
+  margin-bottom: 20px;
+
+  span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .85em;
+    margin-bottom: 10px;
+    display: block;
+    opacity: .5;
+  }
+
+  h3, h4 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .form__newsletter {
+    input[type=email], input[type=submit] {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+
+    input[type=email] {
+      margin-bottom: 10px;
+    }
+  }
+}

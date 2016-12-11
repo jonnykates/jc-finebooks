@@ -2,7 +2,7 @@ Title: The Work Of Sir Robert Lorimer K.B.E., A.R.A., R.S.A.
 
 ----
 
-Author: Christopher Hussey
+Author: HUSSEY, Christopher.
 
 ----
 
@@ -33,3 +33,11 @@ Price: 375
 ----
 
 Booksellerid: 1002
+
+----
+
+Shorttitle: The Work Of Sir Robert Lorimer K.B.E., A.R.A., R.S.A.
+
+----
+
+Keywords: Scotland Arts and Crafts Association Copy
