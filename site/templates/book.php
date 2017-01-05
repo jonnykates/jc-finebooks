@@ -22,7 +22,7 @@
       <div class="product__headings">
           <h1 class="product__author"><?= $page->author()->html() ?></h1>
           <h2 class="product__title"><?= $page->title()->html() ?></h2>
-          <h3 class="product__publisher"><?= $page->publisher()->html() ?> <?= $page->year()->html() ?></h3>
+          <h3 class="product__publisher"><?= $page->publisher()->html() ?>, <span class="product__publication-year"><?= $page->year()->html() ?></span></h3>
       </div>
       <div class="product__pricing">
           <h3 class="product__price"><?php e($page->price()->isNotEmpty(), "<span>£</span>$bookPrice" ); ?></h3>

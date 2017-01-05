@@ -65,7 +65,7 @@
 
   .product__author {
     font-family: 'Bembo-Bold', serif;
-    font-size: 2em;
+    font-size: 1.6em;
     margin: 0 0 10px;
   }
 
@@ -77,9 +77,13 @@
   }
 
   .product__publisher {
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-size: 1.2rem;
     font-family: 'Bembo-Semibold-Italic', serif;
+
+    .product__publication-year {
+      font-family: 'Bembo-Bold', serif;
+    }
   }
 }
 
