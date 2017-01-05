@@ -2,6 +2,7 @@
 
 <?php
   $bookPrice = $page->price()->html();
+  $i = -1;
 ?>
 
   <div class="product-page">
@@ -16,6 +17,15 @@
             echo "<div class='product__image--placeholder'><span>No image</span></div>";
           }
         ?>
+      </div>
+      <div class="product__thumbnails">
+        <?php foreach($page->images() as $key => $image): ?>
+          <?php $i++; ?>
+          <a href="#img<?php echo $i ?>" class="product__thumbnail" style="background-image: url(' <?php echo $image->url() ?> ');"></a>
+          <a href="#_" class="lightbox" id="img<?php echo $i ?>">
+            <img src="<?php echo $image->url() ?>">
+          </a>
+        <?php endforeach ?>
       </div>
     </div>
     <div class="product__content">
