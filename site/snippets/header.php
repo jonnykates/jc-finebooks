@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
-  <?= css('assets/css/normalize.css') ?>
-  <?= css('assets/css/main.css') ?>
-  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <?= css('/assets/css/normalize.css') ?>
+  <?= css('/assets/css/main.css') ?>
+  <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">

@@ -71,9 +71,20 @@ div:not(.footer) {
     font-size: 2.7em;
     font-weight: bold;
     float: left;
-    margin-right: 6px;
+    margin-right: 8px;
     margin-top: 2px;
     line-height: .9;
+  }
+}
+
+div.product__description {
+  > p:first-of-type:first-letter {
+    @extend p;
+    color: inherit;
+    font-weight: normal;
+    float: none;
+    margin: 0;
+    line-height: 1;
   }
 }
 

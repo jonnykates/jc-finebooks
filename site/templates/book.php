@@ -22,13 +22,13 @@
       <div class="product__headings">
           <h1 class="product__author"><?= $page->author()->html() ?></h1>
           <h2 class="product__title"><?= $page->title()->html() ?></h2>
-          <h3 class="product__publisher"><?= $page->publisher()->html() ?> (<?= $page->year()->html() ?>)</h3>
+          <h3 class="product__publisher"><?= $page->publisher()->html() ?> <?= $page->year()->html() ?></h3>
       </div>
       <div class="product__pricing">
           <h3 class="product__price"><?php e($page->price()->isNotEmpty(), "<span>£</span>$bookPrice" ); ?></h3>
           <a class="button button__enquire" href="/contact/?title=<?= $page->title()->html() ?>&author=<?= $page->author()->html() ?>">Enquire</a>
       </div>
-      <div>
+      <div class="product__description">
         <?= $page->text()->kirbytext() ?>
         <p>Stock number: <?= $page->booksellerId() ?>
       </div>

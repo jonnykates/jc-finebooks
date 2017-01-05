@@ -65,19 +65,21 @@
 
   .product__author {
     font-family: 'Bembo-Bold', serif;
-    font-size: 2.2em;
+    font-size: 2em;
     margin: 0 0 10px;
   }
 
   .product__title {
-    font-family: 'Bembo-Semibold-Italic', serif;
+    font-family: 'Bembo', serif;
     color: $faded-text;
     margin: 0;
+    font-size: 1.6em;
   }
 
   .product__publisher {
     text-transform: uppercase;
     font-size: 1.2rem;
+    font-family: 'Bembo-Semibold-Italic', serif;
   }
 }
 
@@ -98,10 +100,11 @@
 
   sup, span {
     // font-size: 1.5rem;
-    font-size: 2rem;
-    vertical-align: middle;
+    // font-size: 2rem;
+    // vertical-align: middle;
     color: inherit;
-    font-family: 'Arial', sans-serif;
+    // font-family: "Bembo-Bold", serif;
+    // font-family: 'Arial', sans-serif;
   }
 }
 
