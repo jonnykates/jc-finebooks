@@ -38,3 +38,10 @@
     }
   }
 }
+
+.footer-navigation {
+  @extend .main-navigation;
+  li {
+    font-size: .8em;
+  }
+}

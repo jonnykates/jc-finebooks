@@ -23,11 +23,11 @@
 
 h1, h2, h3, h4, h5, h6, p, span {
   color: $text-color;
+  font-family: 'Bembo-Semibold-Italic', serif;
 }
 
 h1 {
   font-size: 3.5em;
-  font-family: 'Bembo-Semibold-Italic', serif;
   letter-spacing: -1.5px;
 }
 
@@ -56,9 +56,10 @@ a {
   }
 }
 
-p, span {
+p, span, ul, ol {
   font-family: 'EB Garamond', serif;
   font-size: 1.1em;
+  color: $text-color;
 }
 
 .col--main p {

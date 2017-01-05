@@ -1,6 +1,6 @@
 title: Book
-
 pages: false
+template: false
 
 fields:
   title:

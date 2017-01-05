@@ -6,7 +6,7 @@
 
 <div class="books-grid">
 
-  <?php foreach($books as $book): ?>
+  <?php foreach($books->sortBy('author', 'asc') as $book): ?>
     <a class="books-grid__book" href="<?= $book->url() ?>">
       <div class="book__image">
 

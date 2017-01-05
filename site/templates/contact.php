@@ -14,6 +14,7 @@
 
 <?php if(get('title')){ ?>
   <div class="enquiry-summary">
+    <a class="clear-enquiry" href="/contact">X</a>
     <span>Enquiring about</span>
     <h3><strong><?= $enquiryAuthor ?></strong>, <?= $enquiryRelatesTo ?></h3>
   </div>
@@ -25,13 +26,28 @@
     <input<?php e($form->hasError('name'), ' class="erroneous"')?> type="text" name="name" id="name" value="<?php $form->echoValue('name') ?>" required/>
 
     <label for="email" class="required">E-Mail</label>
-    <input<?php e($form->hasError('_from'), ' class="erroneous"')?> type="email" name="_from" id="email" value="<?php $form->echoValue('_from') ?>" required/>
+    <input type="email" name="email" id="email" value="<?php $form->echoValue('email') ?>" required/>
 
-    <label for="enquiring-about">Enquiring about</label>
-    <input type="text" name="enquiring-about" id="enquiring-about" value="<?= $enquiryRelatesTo ?>" />
+    <span style="display: none;">
+      <label for="enquiring-about">Enquiring about</label>
+      <input type="text" name="enquiring-about" id="enquiring-about" value="<?= $enquiryRelatesTo ?>" />
+    </span>
+
+    <label for="company">Company or institution</label>
+    <input type="text" name="company" id="company" value="<?php $form->echoValue('company') ?>" />
+
+    <label>Interested in</label>
+    <label class="checkbox-wrapper"><input type="checkbox" name="interests[1]" value="European Architecture">European Architecture<br /></label>
+    <label class="checkbox-wrapper"><input type="checkbox" name="interests[2]" value="British Architecture">British Architecture<br /></label>
+
+    <label for="other-interests">Any other relevant areas of interest?</label>
+    <input type="text" name="other-interests" id="other-interests" value="<?php $form->echoValue('other-interests') ?>" placeholder="E.g. Modern Books and Manuscripts" />
 
     <label for="message">Message</label>
     <textarea name="message" id="message"><?php $form->echoValue('message') ?></textarea>
+
+    <label><input type="checkbox" name="opt-in" id="opt-in" value="<?php $form->echoValue('opt-in') ?>" checked>Please contact me about relevant books in the future</label>
+    <input type="hidden" name="opt-in" id="opt-in" value="no" />
 
     <label class="uniform__potty" for="website">Please leave this field blank</label>
     <input type="text" name="website" id="website" class="uniform__potty" />
