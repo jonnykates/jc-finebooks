@@ -3,6 +3,7 @@
 <?php
   $bookPrice = $page->price()->html();
   $i = -1;
+  $coverImageUrl;
 ?>
 
   <div class="product-page">
@@ -12,15 +13,16 @@
         <?php
           if($page->coverImage()->isNotEmpty()) {
             $coverImageUrl = $page->images()->find($page->coverImage())->url();
-            echo "<img src='$coverImageUrl' />";
+            echo "<a href='#coverImageLightbox'><img src='$coverImageUrl' /></a>";
+            echo "<a href='#_' class='lightbox' id='coverImageLightbox'><img src='$coverImageUrl'></a>";
           } else {
             echo "<div class='product__image--placeholder'><span>No image</span></div>";
           }
         ?>
       </div>
       <div class="product__thumbnails">
-        <?php foreach($page->images() as $key => $image): ?>
-          <?php $i++; ?>
+        <?php $filteredImageArray = $page->images()->not($page->coverImage()); ?>
+        <?php foreach($filteredImageArray as $key => $image): $i++ ?>
           <a href="#img<?php echo $i ?>" class="product__thumbnail" style="background-image: url(' <?php echo $image->url() ?> ');"></a>
           <a href="#_" class="lightbox" id="img<?php echo $i ?>">
             <img src="<?php echo $image->url() ?>">

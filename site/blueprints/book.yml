@@ -2,6 +2,9 @@ title: Book
 pages: false
 template: false
 
+files:
+  sortable: true
+
 fields:
   title:
     label: Full title
