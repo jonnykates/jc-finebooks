@@ -1,8 +1,12 @@
 .site-container {
   width: 100%;
   max-width: 744px;
-  margin: 3% auto 0;
+  height: 100%;
+  margin: 0 auto;
   padding: 10px;
+  background-color: $primary-color;
+  z-index: 2;
+  position: relative;
 
   // display: flex;
   // justify-content: space-between;
