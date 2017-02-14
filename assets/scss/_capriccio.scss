@@ -4,8 +4,8 @@
   background-color: $primary-color;
   background-image: url('/assets/images/capriccio.jpg');
   background-position: center bottom;
-  background-size: 100% auto;
-  background-repeat: repeat-x;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 
   &:after {
