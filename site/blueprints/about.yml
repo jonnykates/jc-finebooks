@@ -1,0 +1,14 @@
+title: About
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  text:
+    label: Text
+    type:  textarea
+
+  backgroundImage:
+    label: Background Image
+    type: image

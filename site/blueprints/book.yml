@@ -42,6 +42,10 @@ fields:
     label: Price (£)
     type: text
 
+  isSold:
+    label: Has been sold
+    type: checkbox
+
   booksellerId:
     label: Bookseller ID
     type: text

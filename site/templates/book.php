@@ -3,7 +3,7 @@
 <?php
   $bookPrice = $page->price()->html();
   $i = -1;
-  $coverImageUrl;
+  // $coverImageUrl;
 ?>
 
   <div class="product-page">
@@ -12,8 +12,11 @@
       <div class="image-frame">
         <?php
           if($page->coverImage()->isNotEmpty()) {
-            $coverImageUrl = $page->images()->find($page->coverImage())->url();
-            echo "<a href='#coverImageLightbox'><img src='$coverImageUrl' /></a>";
+            $coverImage = $page->images()->find($page->coverImage());
+            $coverImageUrl = $coverImage->url();
+            $coverImageThumb = thumb($coverImage, array('height' => 300))->url();
+
+            echo "<a href='#coverImageLightbox'><img src='$coverImageThumb' /></a>";
             echo "<a href='#_' class='lightbox' id='coverImageLightbox'><img src='$coverImageUrl'></a>";
           } else {
             echo "<div class='product__image--placeholder'><span>No image</span></div>";
@@ -23,7 +26,7 @@
       <div class="product__thumbnails">
         <?php $filteredImageArray = $page->images()->not($page->coverImage()); ?>
         <?php foreach($filteredImageArray as $key => $image): $i++ ?>
-          <a href="#img<?php echo $i ?>" class="product__thumbnail" style="background-image: url(' <?php echo $image->url() ?> ');"></a>
+          <a href="#img<?php echo $i ?>" class="product__thumbnail" style="background-image: url(' <?php echo thumb($image, array('height' => 80))->url() ?> ');"></a>
           <a href="#_" class="lightbox" id="img<?php echo $i ?>">
             <img src="<?php echo $image->url() ?>">
           </a>
@@ -37,8 +40,15 @@
           <h3 class="product__publisher"><?= $page->publisher()->html() ?>, <span class="product__publication-year"><?= $page->year()->html() ?></span></h3>
       </div>
       <div class="product__pricing">
-          <h3 class="product__price"><?php e($page->price()->isNotEmpty(), "<span>£</span>$bookPrice" ); ?></h3>
-          <a class="button button__enquire" href="/contact/?title=<?= $page->title()->html() ?>&author=<?= $page->author()->html() ?>">Enquire</a>
+          <div class="price__wrapper <?php if($page->isSold() == '1') { echo 'sold-strikethrough';} ?>">
+            <h3 class="product__price"><?php e($page->price()->isNotEmpty(), "<span>£</span>$bookPrice" ); ?></h3>
+          </div>
+          <?php if($page->isSold() == '0'): ?>
+            <a class="button button__enquire" href="/contact/?title=<?= $page->title()->html() ?>&author=<?= $page->author()->html() ?>">Enquire</a>
+          <?php endif ?>
+          <?php if($page->isSold() == '1'): ?>
+            <span class="sold-label">Book sold</span>
+          <?php endif ?>
       </div>
       <div class="product__description">
         <?= $page->text()->kirbytext() ?>

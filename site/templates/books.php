@@ -7,13 +7,13 @@
 <div class="books-grid">
 
   <?php foreach($books->sortBy('author', 'asc') as $book): ?>
-    <a class="books-grid__book" href="<?= $book->url() ?>">
+    <a class="books-grid__book <?php if($book->isSold() == '1') { echo 'book-sold'; } ?>" href="<?= $book->url() ?>">
       <div class="book__image">
 
         <?php
           if($book->coverImage()->isNotEmpty()) {
             $coverImage = $book->images()->find($book->coverImage());
-            $coverImageThumb = thumb($coverImage, array('height' => 170))->url();
+            $coverImageThumb = thumb($coverImage, array('height' => 220))->url();
             echo "<div class='book__cover' style='background-image: url($coverImageThumb);'></div>";
           } else {
             echo "<div class='book__cover book__cover--placeholder'><span>No image</span></div>";
@@ -23,6 +23,9 @@
       </div>
       <h4 class="book__author"><?= $book->author()->html() ?></h4>
       <h5 class="book__title"><?= $book->shortTitle()->html() ?></h5>
+      <?php if($book->isSold() == '1'): ?>
+        <p class="book-sold-label">Sold</p>
+      <?php endif ?>
     </a>
 
   <?php endforeach ?>
