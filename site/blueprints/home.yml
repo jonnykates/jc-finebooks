@@ -1,0 +1,6 @@
+title: Home
+
+fields:
+  backgroundImage:
+    label: Background Image
+    type: image
