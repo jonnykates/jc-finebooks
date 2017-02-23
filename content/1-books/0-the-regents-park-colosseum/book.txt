@@ -6,7 +6,7 @@ Author: [REGENT'S PARK] HYDE, Ralph.
 
 ----
 
-Coverimage: 
+Coverimage: 1003-1.jpg
 
 ----
 
@@ -41,3 +41,7 @@ Shorttitle: The Regent's Park Colosseum
 ----
 
 Keywords: Regent's Park London Panorama
+
+----
+
+Issold: 0
