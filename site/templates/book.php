@@ -40,10 +40,8 @@
           <h3 class="product__publisher"><?= $page->publisher()->html() ?><?php if($page->publisher()->isNotEmpty() && $page->year()->isNotEmpty()){ echo " "; } ?><span class="product__publication-year"><?= $page->year()->html() ?></span></h3>
       </div>
       <div class="product__pricing">
-          <div class="price__wrapper <?php if($page->isSold() == '1') { echo 'sold-strikethrough';} ?>">
-            <h3 class="product__price"><?php e($page->price()->isNotEmpty(), "<span>£</span>$bookPrice" ); ?></h3>
-          </div>
           <?php if($page->isSold() == '0'): ?>
+            <h3 class="product__price"><?php e($page->price()->isNotEmpty(), "<span>£</span>$bookPrice" ); ?></h3>
             <a class="button button__enquire" href="/contact/?title=<?= $page->title()->html() ?>&author=<?= $page->author()->html() ?>">Enquire</a>
           <?php endif ?>
           <?php if($page->isSold() == '1'): ?>

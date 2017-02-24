@@ -150,25 +150,25 @@
   border-bottom: 1px solid $border-color;
 }
 
-.price__wrapper {
-  display: inline-block;
-  margin: 0 1rem 0 0;
-  position: relative;
+// .price__wrapper {
+//   display: inline-block;
+//   margin: 0 1rem 0 0;
+//   position: relative;
 
-  &.sold-strikethrough {
-    &:after {
-      content: '';
-      width: 100%;
-      height: 3px;
-      background-color: $red;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      left: 0;
-      transform: translateY(-50%);
-    }
-  }
-}
+//   &.sold-strikethrough {
+//     &:after {
+//       content: '';
+//       width: 100%;
+//       height: 3px;
+//       background-color: $red;
+//       position: absolute;
+//       top: 50%;
+//       right: 0;
+//       left: 0;
+//       transform: translateY(-50%);
+//     }
+//   }
+// }
 
 .sold-label {
   text-transform: uppercase;
@@ -178,7 +178,7 @@
 
 .product__price {
   display: inline-block;
-  margin: 0;
+  margin: 0 1rem 0 0;
   font-size: 3em;
   color: $secondary-color;
   line-height: 1;
