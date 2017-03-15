@@ -19,5 +19,6 @@
 
   </div> <!-- Close site container -->
 
+<?php snippet('analyticstracking') ?>
 </body>
 </html>

@@ -17,5 +17,6 @@
 
   </div>
 
+<?php snippet('analyticstracking') ?>
 </body>
 </html>

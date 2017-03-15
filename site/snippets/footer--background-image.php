@@ -20,5 +20,6 @@
     </div> <!-- Close site container -->
   </div> <!-- Close the Capriccio background -->
 
+<?php snippet('analyticstracking') ?>
 </body>
 </html>
