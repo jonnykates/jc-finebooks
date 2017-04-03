@@ -9,6 +9,7 @@
   <meta name="description" content="<?= $site->description()->html() ?>">
   <?= css('/assets/css/normalize.css') ?>
   <?= css('/assets/css/main.css') ?>
+  <?= css('/assets/lightbox-2/css/lightbox.min.css') ?>
   <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">

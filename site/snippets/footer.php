@@ -20,5 +20,6 @@
   </div> <!-- Close site container -->
 
 <?php snippet('analyticstracking') ?>
+<script src="/assets/lightbox-2/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
