@@ -10,11 +10,11 @@ Coverimage: 1002.jpg
 
 ----
 
-Publisher: Country Life Limited
+Publisher: London, Country Life Limited,
 
 ----
 
-Year: 1931
+Year: 1931.
 
 ----
 
@@ -41,3 +41,11 @@ Shorttitle: The Work Of Sir Robert Lorimer K.B.E., A.R.A., R.S.A.
 ----
 
 Keywords: Scotland Arts and Crafts Association Copy
+
+----
+
+Issold: 0
+
+----
+
+Collections: antiquarian

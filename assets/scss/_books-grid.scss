@@ -1,3 +1,16 @@
+.collection-title {
+  text-align: center;
+  font-size: 1.75rem;
+  border-bottom: 1px solid $border-color;
+  padding: 20px 0;
+}
+
+.no-books {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Bembo-Semibold-Italic', serif;
+}
+
 .books-grid {
   width: 100%;
   display: flex;
@@ -90,6 +103,26 @@
   font-size: 1em;
   font-family: 'Bembo-Bold', serif;
   margin-bottom: 5px;
+}
+
+nav.pagination {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 10px 0;
+  font-weight: bold;
+  font-family: 'Bembo', serif;
+  a.prev {
+    float: left;
+  }
+  a.next {
+    float: right;
+  }
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
 }
 
 @media screen and (max-width: 780px) {

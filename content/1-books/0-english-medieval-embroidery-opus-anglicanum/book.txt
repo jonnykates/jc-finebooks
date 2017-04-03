@@ -10,11 +10,11 @@ Coverimage: english-medieval-embroidery.jpg
 
 ----
 
-Publisher: Yale University Press in association with The Victoria And Albert Museum
+Publisher: New Haven and London, Yale University Press in association with The Victoria And Albert Museum,
 
 ----
 
-Year: 2016
+Year: 2016.
 
 ----
 
@@ -35,3 +35,11 @@ Shorttitle: English medieval Embroidery. Opus Anglicanum
 ----
 
 Keywords: Exhibition Catalogue Textiles
+
+----
+
+Issold: 0
+
+----
+
+Collections: antiquarian

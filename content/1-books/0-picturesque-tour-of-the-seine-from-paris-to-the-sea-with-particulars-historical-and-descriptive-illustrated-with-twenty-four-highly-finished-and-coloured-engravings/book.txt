@@ -14,11 +14,11 @@ Coverimage: img_1527.jpg
 
 ----
 
-Publisher: R. Ackermann,
+Publisher: London, R. Ackermann,
 
 ----
 
-Year: 1821
+Year: 1821.
 
 ----
 
@@ -43,3 +43,7 @@ Keywords:
 ----
 
 Issold: 0
+
+----
+
+Collections: antiquarian

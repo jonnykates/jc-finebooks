@@ -6,15 +6,15 @@ Author: MICRO MODELS LTD.
 
 ----
 
-Coverimage: 
+Coverimage: 1003-2.jpg
 
 ----
 
-Publisher: Micro Models Ltd.
+Publisher: Micro Models Ltd.,
 
 ----
 
-Year: 1951
+Year: 1951.
 
 ----
 
@@ -39,3 +39,11 @@ Shorttitle: The Houses of Parliament
 ----
 
 Keywords: Architectural game,Architectural model
+
+----
+
+Issold: 0
+
+----
+
+Collections: antiquarian

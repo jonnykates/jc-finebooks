@@ -10,15 +10,15 @@ Author: MENDELSOHN, Erich
 
 ----
 
-Coverimage: 
+Coverimage: 1003-1.jpg
 
 ----
 
-Publisher: Berlin, Rudolf Mosse
+Publisher: Berlin, Rudolf Mosse,
 
 ----
 
-Year: 1929
+Year: 1929.
 
 ----
 
@@ -30,7 +30,7 @@ First edition.
 
 ----
 
-Price: £345
+Price: 345
 
 ----
 
@@ -43,3 +43,7 @@ Booksellerid: 1030
 ----
 
 Keywords: Modernism
+
+----
+
+Collections: antiquarian

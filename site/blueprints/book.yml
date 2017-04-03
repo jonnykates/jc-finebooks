@@ -53,3 +53,11 @@ fields:
   keywords:
     label: Keywords
     type: tags
+
+  collections:
+    label: Collections
+    type: checkboxes
+    default: antiquarian
+    options:
+      antiquarian: Antiquarian material
+      reference: Art and architecture reference

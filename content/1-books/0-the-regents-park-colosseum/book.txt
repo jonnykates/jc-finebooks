@@ -6,15 +6,15 @@ Author: [REGENT'S PARK] HYDE, Ralph.
 
 ----
 
-Coverimage: 1003-1.jpg
+Coverimage: 1003.jpg
 
 ----
 
-Publisher: Ackermann
+Publisher: London, Ackermann,
 
 ----
 
-Year: 1982
+Year: 1982.
 
 ----
 
@@ -45,3 +45,7 @@ Keywords: Regent's Park London Panorama
 ----
 
 Issold: 0
+
+----
+
+Collections: antiquarian

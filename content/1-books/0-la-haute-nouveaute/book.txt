@@ -14,7 +14,7 @@ Coverimage: 1003-11.jpg
 
 ----
 
-Publisher: Maurice Brière
+Publisher: Paris, Maurice Brière,
 
 ----
 
@@ -39,3 +39,7 @@ Booksellerid: 1024
 ----
 
 Keywords: 
+
+----
+
+Collections: antiquarian

@@ -1,8 +1,8 @@
-Title: Designs For Church Embroidery
+Title: Designs For Church Embroidery.
 
 ----
 
-Shorttitle: Designs For Church Embroidery
+Shorttitle: Designs For Church Embroidery.
 
 ----
 
@@ -18,7 +18,7 @@ Publisher: London, Chapman And Hall Limited,
 
 ----
 
-Year: 1894
+Year: 1894.
 
 ----
 
@@ -30,7 +30,7 @@ Price: 225
 
 ----
 
-Issold: 0
+Issold: 1
 
 ----
 
@@ -39,3 +39,7 @@ Booksellerid: 1026
 ----
 
 Keywords: Textiles
+
+----
+
+Collections: antiquarian
