@@ -11,3 +11,17 @@
     text-align: center;
   }
 }
+
+.membership-badges {
+  text-align: center;
+  padding: 0 0 20px;
+
+  p {
+    color: $faded-text;
+    font-size: .85em;
+  }
+
+  img {
+    max-width: 70px;
+  }
+}

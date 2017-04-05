@@ -17,6 +17,11 @@
         <li><a href="/privacy-policy">Privacy Policy</a></li>
       </ul>
 
+      <div class="membership-badges">
+        <p>Proud member of:</p>
+        <a href="http://www.pbfa.org/"><img src="/assets/images/pbfa-logo.png" alt="PFBA Logo" /></a>
+      </div>
+
     </div> <!-- Close site container -->
   </div> <!-- Close the Capriccio background -->
 
