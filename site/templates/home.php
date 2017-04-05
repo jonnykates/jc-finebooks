@@ -13,6 +13,11 @@
           <li><a href="/about">Enter site</a></li>
         </ul>
       </header>
+
+      <div class="membership-badges">
+        <p>Member of:</p>
+        <a href="http://www.pbfa.org/"><img src="/assets/images/pbfa-logo.png" alt="PFBA Logo" /></a>
+      </div>
     </div>
 
   </div>
