@@ -46,4 +46,4 @@ Keywords: Facsimile
 
 ----
 
-Collections: antiquarian
+Collections: reference
