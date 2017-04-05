@@ -139,6 +139,10 @@ div.product__description {
     border-right: 10px solid $faded-text;
     border-bottom: 5px solid transparent;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 a.home-link {

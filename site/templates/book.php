@@ -7,7 +7,7 @@
 ?>
 
   <div class="product-page">
-    <a class="back-link" href="/books">Back</a>
+    <a class="back-link" onclick="history.go(-1);">Back</a>
     <div class="product__image">
       <div class="image-frame">
         <?php
