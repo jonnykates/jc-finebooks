@@ -126,11 +126,11 @@
     margin: 0 0 10px;
   }
 
-  .product__title {
+  .product__title, .product__title p {
     font-family: 'Bembo', serif;
     color: $faded-text;
     margin: 0;
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   .product__publisher {

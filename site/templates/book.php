@@ -32,7 +32,7 @@
     <div class="product__content">
       <div class="product__headings">
           <h1 class="product__author"><?= $page->author()->html() ?></h1>
-          <h2 class="product__title"><?= $page->title()->html() ?></h2>
+          <h2 class="product__title"><?= $page->title()->kirbytext() ?></h2>
           <h3 class="product__publisher"><?= $page->publisher()->html() ?><?php if($page->publisher()->isNotEmpty() && $page->year()->isNotEmpty()){ echo " "; } ?><span class="product__publication-year"><?= $page->year()->html() ?></span></h3>
       </div>
       <div class="product__pricing">
