@@ -13,7 +13,8 @@
     </div>
 
     <ul class="footer-navigation col--main">
-      <li><a href="/terms-conditions">Terms &amp; Conditions</a></li>
+      <li><a href="/payment-details">Payment details</a></li>
+      <li><a href="/terms-conditions">T&amp;Cs</a></li>
       <li><a href="/privacy-policy">Privacy Policy</a></li>
     </ul>
 

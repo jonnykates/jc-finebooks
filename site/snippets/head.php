@@ -5,8 +5,9 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
+  <title><?= $page->title()->html() ?> | <?= $site->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
+  <meta name="google-site-verification" content="cwov3QMDzqzX6JV6DDPDl4ON3T-tArRBCYzkb64D9cM" />
   <?= css('/assets/css/normalize.css') ?>
   <?= css('/assets/css/main.css') ?>
   <?= css('/assets/lightbox-2/css/lightbox.min.css') ?>
