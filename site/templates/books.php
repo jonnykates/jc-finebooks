@@ -22,7 +22,7 @@
   <?php
     if($books->count() > 0): ?>
       <?php foreach($books->sortBy('author', 'asc') as $book): ?>
-        <a class="books-grid__book <?php if($book->isSold() == '1') { echo 'book-sold'; } ?>" href="<?= $book->url() ?>">
+        <a class="books-grid__book <?php if($book->isSold() == '1') { echo 'book-sold'; } ?>" href="<?= $book->url() ?>" itemscope itemtype="http://schema.org/Book">
           <div class="book__image">
 
             <?php
@@ -36,8 +36,8 @@
             ?>
 
           </div>
-          <h4 class="book__author"><?= $book->author()->html() ?></h4>
-          <h5 class="book__title"><?= $book->shortTitle()->html() ?></h5>
+          <h4 class="book__author" itemprop="author"><?= $book->author()->html() ?></h4>
+          <h5 class="book__title" itemprop="name"><?= $book->shortTitle()->html() ?></h5>
           <?php if($book->isSold() == '1'): ?>
             <p class="book-sold-label">Sold</p>
           <?php endif ?>
