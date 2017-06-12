@@ -6,15 +6,15 @@ return function($site, $pages, $page) {
             'name'  => '',
             'email' => 'email'
         ],
-        'actions' => [
-            [
+        'actions' => array(
+            array(
                 '_action' => 'email',
-                'to'      => 'jonathanblue57@gmail.com,jonnykates@gmail.com',
+                'to'      => 'jonathanblue57@gmail.com',
                 'sender'  => 'noreply@jonathanclarkfinebooks.co.uk',
                 'subject' => 'New message on website',
                 'snippet' => 'uniform-email-default'
-            ]
-        ]
+            )
+        )
     ]);
 
     return compact('form');

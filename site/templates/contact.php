@@ -8,6 +8,7 @@
   $enquiryAuthor = "";
   if(get('title')) {
     $enquiryRelatesTo = get('title');
+    $enquiryRelatesTo = htmlspecialchars($enquiryRelatesTo);
     $enquiryAuthor = get('author');
   }
 ?>
@@ -46,8 +47,8 @@
     <label for="message">Message</label>
     <textarea name="message" id="message"><?php $form->echoValue('message') ?></textarea>
 
-    <label><input type="checkbox" name="opt-in" id="opt-in" value="<?php $form->echoValue('opt-in') ?>" checked>Please contact me about relevant books in the future</label>
     <input type="hidden" name="opt-in" id="opt-in" value="no" />
+    <label><input type="checkbox" name="opt-in" id="opt-in" value="yes" checked>Please contact me about relevant books in the future</label>
 
     <label class="uniform__potty" for="website">Please leave this field blank</label>
     <input type="text" name="website" id="website" class="uniform__potty" />
