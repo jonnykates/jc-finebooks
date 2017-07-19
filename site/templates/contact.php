@@ -37,12 +37,12 @@
     <label for="company">Company or institution</label>
     <input type="text" name="company" id="company" value="<?php $form->echoValue('company') ?>" />
 
-    <label>Interested in</label>
+<!--     <label>Interested in</label>
     <label class="checkbox-wrapper"><input type="checkbox" name="interests[1]" value="European Architecture">European Architecture<br /></label>
-    <label class="checkbox-wrapper"><input type="checkbox" name="interests[2]" value="British Architecture">British Architecture<br /></label>
+    <label class="checkbox-wrapper"><input type="checkbox" name="interests[2]" value="British Architecture">British Architecture<br /></label> -->
 
-    <label for="other-interests">Any other relevant areas of interest?</label>
-    <input type="text" name="other-interests" id="other-interests" value="<?php $form->echoValue('other-interests') ?>" placeholder="E.g. Modern Books and Manuscripts" />
+    <label for="interests">Relevant areas of interest</label>
+    <input type="text" name="interests" id="interests" value="<?php $form->echoValue('other-interests') ?>" placeholder="E.g. Modern Books and Manuscripts" />
 
     <label for="message">Message</label>
     <textarea name="message" id="message"><?php $form->echoValue('message') ?></textarea>
