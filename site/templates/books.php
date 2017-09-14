@@ -12,7 +12,7 @@
     $collectionTitle = "All books";
   }
 
-  $books = page('books')->children()->visible()->filterBy('collections', $collection, ',')->paginate(20);
+  $books = page('books')->children()->visible()->filterBy('collections', $collection, ',')->sortBy('author', 'asc')->paginate(20);
 ?>
 
 <h1 class="collection-title"><?php echo $collectionTitle ?></h1>
@@ -21,7 +21,7 @@
 
   <?php
     if($books->count() > 0): ?>
-      <?php foreach($books->sortBy('author', 'asc') as $book): ?>
+      <?php foreach($books as $book): ?>
         <a class="books-grid__book <?php if($book->isSold() == '1') { echo 'book-sold'; } ?>" href="<?= $book->url() ?>" itemscope itemtype="http://schema.org/Book">
           <div class="book__image">
 
