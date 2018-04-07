@@ -16,7 +16,12 @@
 
       <div class="membership-badges">
         <p>Member of:</p>
-        <a href="http://www.pbfa.org/"><img src="/assets/images/pbfa-logo.png" alt="PFBA Logo" /></a>
+        <div class="membership-badges__badge">
+          <a href="http://www.pbfa.org/"><img src="/assets/images/pbfa-logo-black.png" alt="PFBA Logo" /></a>
+        </div>
+        <div class="membership-badges__badge">
+          <a href="http://www.aba.org.uk/"><img src="/assets/images/aba_logo_2011_web.jpg" alt="Antiquarian Booksellers' Association logo" /></a>
+        </div>
       </div>
     </div>
 
