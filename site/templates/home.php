@@ -19,7 +19,7 @@
           <a href="http://www.aba.org.uk/"><img src="/assets/images/aba_logo_2011_web.jpg" alt="Antiquarian Booksellers' Association logo" /></a>
         </div>
         <div class="membership-badges__badge">
-          <a href="https://ilab.org/home" style="padding: 5px;"><img src="/assets/images/ILAB logo bw_blazon_bw ilab.jpg" alt="International League of Antiquarian Booksellers logo" /></a>
+          <a href="https://ilab.org/home" style="padding: 5px;"><img src="/assets/images/ilab_logo.jpg" alt="International League of Antiquarian Booksellers logo" /></a>
         </div>
         <div class="membership-badges__badge">
           <a href="http://www.pbfa.org/"><img src="/assets/images/pbfa-logo-black.png" alt="PFBA Logo" /></a>
