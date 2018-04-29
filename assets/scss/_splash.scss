@@ -16,4 +16,12 @@
   .main-navigation li a {
     font-size: 1.6em;
   }
+
+
+  @media (max-width: 380px) {
+    top: 0;
+    transform: none;
+    bottom: 0;
+    height: 100%;
+  }
 }
