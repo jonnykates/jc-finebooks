@@ -42,6 +42,10 @@
 .membership-badges__badge {
   margin: 20px;
 
+  a {
+    display: block;
+  }
+
   @media (max-width: 480px) {
     margin: 10px;
   }
