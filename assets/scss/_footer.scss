@@ -17,10 +17,11 @@
   border-radius: 5px;
   padding: 10px;
   background-color: #ffffff;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
 
   p {
     width: 100%;
@@ -31,7 +32,7 @@
   }
 
   img {
-    max-height: 90px;
+    max-height: 80px;
 
     @media (max-width: 480px) {
       max-height: 70px;
@@ -40,7 +41,7 @@
 }
 
 .membership-badges__badge {
-  margin: 20px;
+  margin: 10px 15px;
 
   a {
     display: block;
