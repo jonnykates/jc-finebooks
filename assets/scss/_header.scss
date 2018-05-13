@@ -46,7 +46,8 @@
   }
 }
 
-.main-navigation li:hover {
+.main-navigation li:hover,
+.main-navigation li:focus  {
   .main-navigation__sub-menu {
     height: auto;
   }
