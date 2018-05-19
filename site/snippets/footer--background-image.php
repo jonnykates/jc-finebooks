@@ -21,6 +21,7 @@
     </div> <!-- Close site container -->
   </div> <!-- Close the Capriccio background -->
 
+<?php snippet('menu-js') ?>
 <?php snippet('analyticstracking') ?>
 </body>
 </html>

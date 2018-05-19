@@ -46,16 +46,17 @@
   }
 }
 
-.main-navigation li:hover,
-.main-navigation li:focus  {
-  .main-navigation__sub-menu {
-    height: auto;
-  }
-}
+// .main-navigation li:hover,
+// .main-navigation li:focus  {
+//   .main-navigation__sub-menu {
+//     height: auto;
+//   }
+// }
 
 .main-navigation__sub-menu {
-  height: 0;
-  overflow: hidden;
+  // height: 0;
+  // overflow: hidden;
+  display: none; // Hide this by default
   -webkit-padding-start: 0;
   padding: 5px 0 0 0;
   list-style: none;

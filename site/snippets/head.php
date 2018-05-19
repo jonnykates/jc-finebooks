@@ -11,6 +11,10 @@
   <?= css('/assets/css/normalize.css') ?>
   <?= css('/assets/css/main.css') ?>
   <?= css('/assets/lightbox-2/css/lightbox.min.css') ?>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
   <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
