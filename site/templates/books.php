@@ -6,13 +6,18 @@
   $collectionTitle = "";
   if($collection === "reference") {
     $collectionTitle = "Art and Architecture Reference";
+    $books = page('books')->children()->visible()->filterBy('collections', $collection, ',')->filterBy('isSold', '0')->sortBy('author', 'asc')->paginate(20);
   } else if($collection === "antiquarian") {
     $collectionTitle = "Antiquarian books";
+    $books = page('books')->children()->visible()->filterBy('collections', $collection, ',')->filterBy('isSold', '0')->sortBy('author', 'asc')->paginate(20);
+  } else if($collection === "sold-books") {
+    $collectionTitle = "Sold books";
+    $books = page('books')->children()->visible()->filterBy('isSold', '1')->sortBy('author', 'asc')->paginate(20);
   } else {
     $collectionTitle = "All books";
+    $books = page('books')->children()->visible()->sortBy('author', 'asc')->paginate(20);
   }
 
-  $books = page('books')->children()->visible()->filterBy('collections', $collection, ',')->sortBy('author', 'asc')->paginate(20);
 ?>
 
 <h1 class="collection-title"><?php echo $collectionTitle ?></h1>
