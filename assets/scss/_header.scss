@@ -30,9 +30,6 @@
     flex-grow: 1;
     text-align: center;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-transform: uppercase;
     font-family: 'Bembo-Bold';
     color: $secondary-color;
@@ -57,13 +54,15 @@
 // }
 
 .main-navigation__sub-menu {
+  // height: 0;
+  // overflow: hidden;
   display: none; // Hide this by default
   -webkit-padding-start: 0;
   padding: 5px 0 0 0;
   list-style: none;
   position: absolute;
-  left: auto;
-  margin: 20px auto 0 auto;
+  left: -53px; // hard coded positioning
+  margin: 0 auto;
   width: 240px;
   z-index: 5;
   font-size: .85em;
@@ -110,5 +109,6 @@
 @media (max-width: 400px) {
   .main-navigation__sub-menu {
     width: 190px;
+    left: -40px;
   }
 }
