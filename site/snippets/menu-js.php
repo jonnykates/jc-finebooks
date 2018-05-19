@@ -7,10 +7,11 @@
     $(this).find('ul').hide();
   });
 
-  $('body').click(function(e) {
+  $('body').on('click touchend', function(e) {
     var target = $(e.target);
-    if(!target.is('.main-navigation li')) {
+    if(!target.is('.main-navigation li') && !target.is('.main-navigation li ul li a') ) {
       $('.main-navigation li ul').hide();
+      console.log('bang');
     }
   })
 </script>
