@@ -10,8 +10,8 @@
   } else if($collection === "antiquarian") {
     $collectionTitle = "Antiquarian books";
     $books = page('books')->children()->visible()->filterBy('collections', $collection, ',')->filterBy('isSold', '0')->sortBy('author', 'asc')->paginate(20);
-  } else if($collection === "sold-books") {
-    $collectionTitle = "Sold books";
+  } else if($collection === "archive") {
+    $collectionTitle = "Archive";
     $books = page('books')->children()->visible()->filterBy('isSold', '1')->sortBy('author', 'asc')->paginate(20);
   } else {
     $collectionTitle = "All books";
@@ -27,7 +27,7 @@
   <?php
     if($books->count() > 0): ?>
       <?php foreach($books as $book): ?>
-        <a class="books-grid__book <?php if($book->isSold() == '1') { echo 'book-sold'; } ?>" href="<?= $book->url() ?>" itemscope itemtype="http://schema.org/Book">
+        <a class="books-grid__book" href="<?= $book->url() ?>" itemscope itemtype="http://schema.org/Book">
           <div class="book__image">
 
             <?php
@@ -43,9 +43,6 @@
           </div>
           <h4 class="book__author" itemprop="author"><?= $book->author()->html() ?></h4>
           <h5 class="book__title" itemprop="name"><?= $book->shortTitle()->html() ?></h5>
-          <?php if($book->isSold() == '1'): ?>
-            <p class="book-sold-label">Sold</p>
-          <?php endif ?>
         </a>
 
       <?php endforeach ?>
